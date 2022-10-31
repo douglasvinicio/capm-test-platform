@@ -91,15 +91,15 @@ export function QuestionCard() {
                                 <label><input type="checkbox" name="question" value="b" /> B - {question.b}</label><br />
                                 <label><input type="checkbox" name="question" value="c" /> C - {question.c}</label><br />
                                 <label><input type="checkbox" name="question" value="d" /> D - {question.d}</label><br />
-                                <hr className="mt-6" />
-                                <button className="mt-6" type='submit'>Show Answer</button>
-                                {question.isValidated ?
+                                <hr className="mt-6" />                                
+                                {question.isValidated ?                                
                                     <div>
+                                    <button className="mt-6" type='submit'>Hide Answer</button>
                                     <h1 className='mt-4'>{question.right_answers.toString().toLocaleUpperCase()}</h1>
                                     <p  className='mt-4'><strong> Explanation:</strong> {question.explanation}</p>                                     
                                     </div>
                                     :
-                                    ''
+                                    <button className="mt-6" type='submit'>Show Answer</button>
                                 }                                
                             </fieldset>
                         </form>
