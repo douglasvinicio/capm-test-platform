@@ -45,8 +45,7 @@ export function QuestionCard() {
     // }
 
     function handleQuestionValidation(questionIndex: number) {                    
-        //loop again with map and save question right answers      
-
+        //loop again with map and save question right answers                  
         const validatedQuestions = questions.map((question, index) => 
         questionIndex === index 
         ? {            
@@ -56,7 +55,6 @@ export function QuestionCard() {
         : question
         )        
         setQuestions(validatedQuestions)        
-        console.log(questions)
     }
 
     useEffect(() => {
