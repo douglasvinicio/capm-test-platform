@@ -5,7 +5,7 @@ import { QuestionCard } from './components/QuestionCard/QuestionCard'
 
 function App() {  
   return (
-    <div >
+    <div>
         <QuestionCard />
     </div>
   )
